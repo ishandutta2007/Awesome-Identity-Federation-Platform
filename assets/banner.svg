@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Dark Gradient Background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Card/Pill Gradients -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="badgeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      @keyframes pulseLine {
+        0%, 100% { stroke-dashoffset: 200; opacity: 0.3; }
+        50% { stroke-dashoffset: 0; opacity: 0.9; }
+      }
+      @keyframes orbitNode {
+        0% { transform: rotate(0deg) translate(25px) rotate(0deg); }
+        100% { transform: rotate(360deg) translate(25px) rotate(-360deg); }
+      }
+      @keyframes floatBadge {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes glowPulse {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 0.85; }
+      }
+
+      .pulse-path {
+        stroke-dasharray: 20 10;
+        animation: pulseLine 6s linear infinite;
+      }
+      .node-pulse {
+        animation: glowPulse 3s ease-in-out infinite alternate;
+      }
+      .floating-pill {
+        animation: floatBadge 4s ease-in-out infinite;
+      }
+      .floating-pill-delayed {
+        animation: floatBadge 4s ease-in-out 2s infinite;
+      }
+      .title-text {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        fill: #ffffff;
+      }
+      .subtitle-text {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        fill: #94a3b8;
+      }
+      .tag-text {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #cbd5e1;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGradient)"/>
+  <rect width="1196" height="316" x="2" y="2" rx="14" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Background Animated Network Mesh & Dynamic Flow Lines -->
+  <g opacity="0.35">
+    <!-- Network Lines -->
+    <path d="M 100 80 Q 300 200 500 90 T 900 150 T 1100 70" stroke="#6366f1" stroke-width="2" fill="none" class="pulse-path"/>
+    <path d="M 50 240 Q 350 100 650 250 T 1150 220" stroke="#8b5cf6" stroke-width="2" fill="none" class="pulse-path" style="animation-delay: -2s;"/>
+    
+    <!-- Connected Network Nodes -->
+    <circle cx="100" cy="80" r="5" fill="#818cf8" class="node-pulse"/>
+    <circle cx="500" cy="90" r="7" fill="#a78bfa" class="node-pulse"/>
+    <circle cx="900" cy="150" r="6" fill="#c084fc" class="node-pulse"/>
+    <circle cx="650" cy="250" r="8" fill="#f472b6" class="node-pulse"/>
+  </g>
+
+  <!-- Decorative Glowing Orb (Behind Layer) -->
+  <circle cx="1050" cy="80" r="120" fill="#6366f1" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="150" cy="260" r="100" fill="#ec4899" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- Background Animated Protocol Pills (Shifted to sides so center foreground is 100% clear) -->
+  <g class="floating-pill">
+    <rect x="50" y="45" width="110" height="34" rx="17" fill="url(#badgeGrad1)" stroke="#6366f1" stroke-width="1"/>
+    <text x="105" y="67" text-anchor="middle" class="tag-text">🔐 SAML 2.0</text>
+  </g>
+
+  <g class="floating-pill-delayed">
+    <rect x="180" y="45" width="130" height="34" rx="17" fill="url(#badgeGrad1)" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="245" y="67" text-anchor="middle" class="tag-text">⚡ OpenID Connect</text>
+  </g>
+
+  <g class="floating-pill">
+    <rect x="910" y="45" width="120" height="34" rx="17" fill="url(#badgeGrad1)" stroke="#ec4899" stroke-width="1"/>
+    <text x="970" y="67" text-anchor="middle" class="tag-text">🔑 OAuth 2.0</text>
+  </g>
+
+  <g class="floating-pill-delayed">
+    <rect x="1045" y="45" width="105" height="34" rx="17" fill="url(#badgeGrad1)" stroke="#38bdf8" stroke-width="1"/>
+    <text x="1097" y="67" text-anchor="middle" class="tag-text">🛡️ SCIM 2.0</text>
+  </g>
+
+  <!-- Main Title & Subtitle Container (Foreground Focus Area) -->
+  <!-- Top Accent Line -->
+  <rect x="420" y="115" width="360" height="4" rx="2" fill="url(#accentGradient)" filter="url(#subtleGlow)"/>
+
+  <!-- Shield Security Icon -->
+  <g transform="translate(572, 130)">
+    <path d="M 28 0 L 52 10 C 52 35 38 52 28 60 C 18 52 4 35 4 10 Z" fill="url(#accentGradient)" filter="url(#subtleGlow)"/>
+    <path d="M 28 14 L 40 22 C 40 36 31 46 28 50 C 25 46 16 36 16 22 Z" fill="#0f172a"/>
+    <circle cx="28" cy="30" r="5" fill="#a78bfa"/>
+    <path d="M 28 35 L 28 42" stroke="#a78bfa" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Main Title Text -->
+  <text x="600" y="225" text-anchor="middle" class="title-text" font-size="34" letter-spacing="-0.5">
+    Awesome Identity Federation Platform
+  </text>
+
+  <!-- Subtitle Text -->
+  <text x="600" y="258" text-anchor="middle" class="subtitle-text" font-size="16">
+    Curated SaaS Products, Open-Source IdPs &amp; Enterprise SSO Frameworks
+  </text>
+
+  <!-- Bottom Feature Badges -->
+  <g transform="translate(370, 276)">
+    <rect x="0" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="65" y="17" text-anchor="middle" class="tag-text" font-size="11">🌐 Workforce SSO</text>
+
+    <rect x="145" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="210" y="17" text-anchor="middle" class="tag-text" font-size="11">👥 Customer CIAM</text>
+
+    <rect x="290" y="0" width="170" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="375" y="17" text-anchor="middle" class="tag-text" font-size="11">🚀 Self-Hosted &amp; Open Source</text>
+  </g>
+</svg>

@@ -1,213 +1,143 @@
-# Awesome-Identity-Federation-Platform
-
-## Top Identity Federation Platforms Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on SSO, Federation, SAML/OIDC, Identity Brokering, Workforce & Customer Identity*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Identity Federation**. These systems enable single sign-on (SSO), federate identities across applications and organizations, support SAML, OpenID Connect, and OAuth, and act as identity providers or brokers for workforce and customer use cases.
-
-
-
-**Examples** include Ping Identity, Okta, Microsoft Entra ID, Auth0, Keycloak, ForgeRock, OneLogin, IBM Security Verify, WSO2 Identity Server, and Oracle Identity Cloud (the category leaders).
-
-
-
-**Open-source emphasis**: Identity federation has excellent open-source options. **Keycloak** (CNCF), **Authentik**, **Ory**, and **WSO2 Identity Server** provide production-grade SSO, federation, and identity management. Commercial platforms still lead in pre-built app catalogs, support, and global scale. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-- **[Ping Identity](https://www.pingidentity.com/)**  
-
-  Enterprise identity platform offering SSO, federation, access management, and customer identity solutions for complex hybrid environments.
-
-
-
-- **[Okta](https://www.okta.com/)**  
-
-  Leading cloud identity platform for workforce and customer identity, with extensive application integrations, SSO, MFA, and lifecycle management.
-
-
-
-- **[Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)**  
-
-  Microsoft’s cloud identity and access management service (formerly Azure AD) providing SSO, federation, conditional access, and directory services.
-
-
-
-- **[Auth0 (Okta Customer Identity)](https://auth0.com/)**  
-
-  Developer-focused identity platform for customer-facing applications, supporting social login, passwordless, and extensible authentication flows.
-
-
-
-- **[Keycloak (Red Hat build / enterprise support)](https://www.keycloak.org/)**  
-
-  Open-source identity and access management solution widely deployed for SSO and federation; enterprise support available via Red Hat and partners.
-
-
-
-- **[ForgeRock (Ping Identity portfolio)](https://www.pingidentity.com/)**  
-
-  Enterprise identity platform historically strong in large-scale CIAM and workforce identity; now part of the broader Ping ecosystem.
-
-
-
-- **[OneLogin (One Identity)](https://www.onelogin.com/)**  
-
-  Cloud IAM platform providing SSO, MFA, and directory integration for workforce identity.
-
-
-
-- **[IBM Security Verify](https://www.ibm.com/products/verify-identity)**  
-
-  IBM’s identity and access management offerings for workforce and consumer identity, including federation and risk-based access.
-
-
-
-- **[WSO2 Identity Server (enterprise options)](https://wso2.com/identity-server/)**  
-
-  Open-source and commercial identity and access management platform supporting SSO, federation, and API security.
-
-
-
-- **[Oracle Identity Cloud Service / OCI IAM](https://www.oracle.com/security/identity-management/)**  
-
-  Oracle’s cloud identity services for SSO, federation, and identity lifecycle across Oracle and third-party applications.
-
-
-
-## Open-Source GitHub Projects
-
-- **[Keycloak](https://github.com/keycloak/keycloak)**  
-
-  Leading open-source identity and access management solution (CNCF) supporting SSO, identity brokering, user federation (LDAP/AD), SAML, OIDC, and fine-grained authorization.
-
-
-
-- **[Authentik](https://github.com/goauthentik/authentik)**  
-
-  Modern open-source identity provider with visual auth flows, SAML, OIDC, LDAP, RADIUS, application proxy, and a strong self-hosted focus.
-
-
-
-- **[Ory (Kratos, Hydra, Keto, Oathkeeper)](https://github.com/ory)**  
-
-  Cloud-native open-source identity stack: user management (Kratos), OAuth2/OIDC (Hydra), permissions (Keto), and zero-trust proxy (Oathkeeper).
-
-
-
-- **[WSO2 Identity Server](https://github.com/wso2/product-is)**  
-
-  Full-featured open-source IAM platform supporting SSO, federation, adaptive authentication, and API security.
-
-
-
-- **[FreeIPA](https://www.freeipa.org/)**  
-
-  Open-source integrated identity management combining Linux, Kerberos, DNS, and certificate services—strong for Unix/Linux environments.
-
-
-
-- **[LemonLDAP::NG](https://lemonldap-ng.org/)**  
-
-  Open-source WebSSO and access management solution supporting SAML, OIDC, CAS, and reverse-proxy based federation.
-
-
-
-- **[Authelia](https://github.com/authelia/authelia)**  
-
-  Open-source authentication and authorization server providing 2FA and single sign-on for applications via reverse proxy.
-
-
-
-- **[Gluu / Janssen Project](https://github.com/JanssenProject)**  
-
-  Open-source digital identity platform focused on large-scale IAM and federation (evolution of Gluu Server).
-
-
-
-- **[Casdoor](https://github.com/casdoor/casdoor)**  
-
-  Open-source UI-first Identity and Access Management (IAM) / Single-Sign-On (SSO) platform with web UI and multi-language support.
-
-
-
-- **[Zitadel](https://github.com/zitadel/zitadel)**  
-
-  Open-source identity infrastructure with a focus on modern APIs, multi-tenancy, and cloud-native deployment.
-
-
-
-### Additional Strong Open-Source Options
-
-- Deploying **Keycloak** as the default open-source choice for enterprise SSO and federation.
-
-- Choosing **Authentik** for a modern UI, visual flows, and broader built-in protocol set.
-
-- Using **Ory** when a headless, API-first, cloud-native identity architecture is preferred.
-
-- Combining open IdPs with commercial directories (Okta, Entra) as brokers or upstream sources.
-
-- Accepting that the largest pre-built SaaS app catalogs, global support, and turnkey compliance packages still favor commercial platforms (Okta, Entra ID, Ping, Auth0, etc.).
-
-- Focusing open-source efforts on data sovereignty, air-gapped deployments, and freedom from per-user pricing.
-
-
-
-**Frameworks for building custom systems**: Deploy Keycloak or Authentik → federate LDAP/AD and external IdPs → protect apps via SAML/OIDC → add MFA and adaptive policies → integrate with existing directories. Suitable for organizations with platform/ops capacity. Many enterprises still standardize on commercial IdPs for workforce SSO breadth and support while using open source for customer identity or specialized environments.
-
-
-
-## How to Contribute
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Identity systems are security-critical. Open-source deployments require hardened configuration, regular patching, secure secrets management, and proper high-availability design. Misconfiguration can lead to serious breaches. This list is not security or compliance advice.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Identity Federation Platform Header" width="100%"/>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Identity-Federation-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Identity-Federation-Platform?style=flat-square&logo=github" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Identity-Federation-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Identity-Federation-Platform?style=flat-square&logo=github" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Identity-Federation-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Identity-Federation-Platform?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+# 🌐 Awesome Identity Federation Platform
+
+> **A curated showcase of premier SaaS Identity Cloud Platforms and Open-Source Identity & Access Management (IAM) infrastructure.**
+> 
+> *Comprehensive guide for workforce SSO, customer identity (CIAM), SAML 2.0, OpenID Connect (OIDC), OAuth 2.0, and zero-trust identity brokering.*
 
 ---
 
-**Made for identity architects, security engineers, and platform teams implementing SSO and federation.**
+## 📌 Table of Contents
 
-Let's keep identity secure, standards-based, and as open as practical.
+- [☁️ SaaS & Enterprise Cloud Identity Platforms](#️-saas--enterprise-cloud-identity-platforms)
+- [🔓 Open-Source Identity & Access Management Projects](#-open-source-identity--access-management-projects)
+- [🛠️ Architectural Selection Guide](#️-architectural-selection-guide)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## ☁️ SaaS & Enterprise Cloud Identity Platforms
+
+> 📊 **Sector Market Size & Structure**: The global **Identity & Access Management (IAM)** and **Identity Federation** market is estimated at **~$16.5 Billion (2026)** and projected to reach **~$32 Billion by 2030**. The enterprise workforce identity market is **moderately concentrated** (led by Microsoft Entra ID and Okta), while the Customer Identity (CIAM) and developer authentication segment is **highly fragmented** with strong competition between specialized cloud providers and open-source stacks.
+
+Below is a comparison of leading enterprise SaaS Identity platforms, ranked by **Company Size / Market Valuation (Descending)**:
+
+| 🏢 Platform | 💡 Key Capabilities & Focus | 💰 Starting Price | 🎁 Free Tier / Trial Limits | 📊 Company Size / Valuation |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)** | Enterprise cloud directory, workforce SSO, conditional access, and cross-cloud identity governance. | **$6.00 / user / month** (Entra ID P1) | **Free plan included** (Up to 500,000 directory objects; 50,000 MAUs for External Identities) | **~$3.3 Trillion Market Cap** (Microsoft) |
+| **[Oracle OCI IAM](https://www.oracle.com/security/identity-management/)** | Cloud-native enterprise identity lifecycle, SSO, SAML federation, and Oracle Cloud infrastructure integration. | **$2.25 / user / month** (IAM Premium) | **Free plan included** (2,000 free IAM users & 50,000 MAUs for External Identities) | **~$380 Billion Market Cap** (Oracle Corp) |
+| **[IBM Security Verify](https://www.ibm.com/products/verify-identity)** | Enterprise hybrid identity management, risk-based adaptive MFA, and deep compliance auditing. | **$1.88 / user / month** (Verify SaaS SSO) | **30-day free trial** (Full access for up to 100 users and 5 target applications) | **~$200 Billion Market Cap** (IBM) |
+| **[Okta Workforce Identity](https://www.okta.com/)** | Industry-standard workforce identity cloud with 7,000+ pre-built application integrations and universal directory. | **$2.00 / user / month** (Single Sign-On starter) | **Developer Free Edition** (Free forever for up to 100 workforce active users) | **~$13 Billion Market Cap** (Okta Inc) |
+| **[Ping Identity & ForgeRock](https://www.pingidentity.com/)** | High-scale enterprise hybrid IAM, legacy web access management, and complex identity federation engines. | **$3.00 / user / month** (PingOne Essential) | **30-day free trial** (Unlimited test users & up to 5 enterprise connections) | **~$5.1 Billion Valuation** (Thoma Bravo) |
+| **[Auth0 (by Okta)](https://auth0.com/)** | Developer-centric CIAM platform supporting rapid social login, passwordless auth, and custom extensibility rules. | **$35.00 / month** (B2C Essentials, 500 MAUs) | **Free plan included** (Free forever for up to 7,400 MAUs & 2 social IdPs) | **~$3.2 Billion Valuation** (Acquired by Okta) |
+| **[OneLogin](https://www.onelogin.com/)** | Cloud Identity platform offering streamlined workforce SSO, SmartFactor MFA, and directory integration. | **$2.00 / user / month** (Advanced SSO) | **30-day free trial** (Full feature access for up to 25 users) | **~$1.5 Billion Valuation** (One Identity / Quest) |
+| **[WSO2 Asgardeo](https://wso2.com/asgardeo/)** | Cloud-native Customer IAM (CIAM) SaaS built on WSO2 standards with low-code developer SDKs. | **$50.00 / month** (Business Plan) | **Free plan included** (Free forever for up to 1,000 MAUs & 5 app integrations) | **~$600 Million Valuation** (WSO2 / EQT) |
+
+---
+
+## 🔓 Open-Source Identity & Access Management Projects
+
+Below is a curated list of production-grade **Open-Source Identity Providers**, ranked by **GitHub Star Count (Descending)**. Star badges link directly to each project's stargazers page:
+
+1. 👑 **[Keycloak](https://github.com/keycloak/keycloak)** [![GitHub stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers)  
+   Leading CNCF open-source identity and access management solution. Features Single Sign-On (SSO), identity brokering, LDAP/AD user federation, SAML 2.0, OpenID Connect, and fine-grained authorization.
+
+2. 🛡️ **[Authelia](https://github.com/authelia/authelia)** [![GitHub stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers)  
+   Lightweight authentication and authorization server providing two-factor authentication (2FA) and single sign-on for applications running behind reverse proxies (Nginx, Traefik, Caddy).
+
+3. 🔑 **[Authentik](https://github.com/goauthentik/authentik)** [![GitHub stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers)  
+   Modern open-source Identity Provider focused on flexibility and visual pipeline builders. Supports SAML 2.0, OIDC, LDAP, RADIUS, embedded reverse proxying, and custom Python authentication flows.
+
+4. ⚡ **[SuperTokens](https://github.com/supertokens/supertokens-core)** [![GitHub stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers)  
+   Developer-first open-source Auth0 alternative for web and mobile apps. Provides modular components for passwordless login, social SSO, multi-tenancy, and secure session management.
+
+5. 🏢 **[Zitadel](https://github.com/zitadel/zitadel)** [![GitHub stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers)  
+   Cloud-native identity infrastructure written in Go. Built for multi-tenant B2B applications, fine-grained access control, audit immutability, and turn-key OIDC/SAML integration.
+
+6. 🎨 **[Logto](https://github.com/logto-io/logto)** [![GitHub stars](https://img.shields.io/github/stars/logto-io/logto?style=social&color=white)](https://github.com/logto-io/logto/stargazers)  
+   Modern open-source identity engine with pre-built UI sign-in components, multi-tenant RBAC, and streamlined developer workflows for Customer Identity (CIAM).
+
+7. 🚀 **[Casdoor](https://github.com/casdoor/casdoor)** [![GitHub stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers)  
+   UI-first open-source Identity and Access Management (IAM) / Single Sign-On (SSO) platform supporting OAuth 2.0, OIDC, SAML, and CAS protocols with multi-language web UI support.
+
+8. ⚙️ **[Ory Kratos](https://github.com/ory/kratos)** [![GitHub stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers)  
+   API-first, headless cloud-native user management and identity provider engine. Integrates seamlessly with Ory Hydra for OAuth2/OIDC standards and zero-trust microservices architectures.
+
+9. 🎓 **[Apereo CAS](https://github.com/apereo/cas)** [![GitHub stars](https://img.shields.io/github/stars/apereo/cas?style=social&color=white)](https://github.com/apereo/cas/stargazers)  
+   Enterprise single sign-on framework heavily used in higher education and enterprise orgs, supporting Central Authentication Service (CAS) protocol, SAML 2.0, OpenID Connect, and OAuth 2.0.
+
+10. 🦀 **[Kanidm](https://github.com/kanidm/kanidm)** [![GitHub stars](https://img.shields.io/github/stars/kanidm/kanidm?style=social&color=white)](https://github.com/kanidm/kanidm/stargazers)  
+    High-performance, memory-safe identity management server written in Rust. Designed for Linux enterprise directory replacement, SSH key management, and OAuth2/OIDC web SSO.
+
+11. 🌐 **[WSO2 Identity Server](https://github.com/wso2/product-is)** [![GitHub stars](https://img.shields.io/github/stars/wso2/product-is?style=social&color=white)](https://github.com/wso2/product-is/stargazers)  
+    Enterprise-grade open-source IAM platform offering adaptive authentication, identity federation across multi-cloud environments, API security, and privacy compliance.
+
+12. 📦 **[Janssen Project (Gluu evolution)](https://github.com/JanssenProject/jans)** [![GitHub stars](https://img.shields.io/github/stars/JanssenProject/jans?style=social&color=white)](https://github.com/JanssenProject/jans/stargazers)  
+    Linux Foundation open-source digital identity platform designed for high-concurrency identity governance, OAuth 2.0 authorization, and FIDO2 passwordless authentication.
+
+13. 🐧 **[FreeIPA](https://www.freeipa.org/)**  
+    Integrated open-source identity management solution for Unix/Linux environments, combining Linux directory services, 389 Directory Server, Kerberos, DNS, and Certificate Management (PKI).
+
+14. 🍋 **[LemonLDAP::NG](https://lemonldap-ng.org/)**  
+    Enterprise WebSSO and reverse-proxy access management software supporting SAML 2.0, OpenID Connect, CAS, and fine-grained authorization rules.
+
+---
+
+## 🛠️ Architectural Selection Guide
+
+- 🏛️ **Enterprise Workforce SSO**: Standardize on **Keycloak** or **Authentik** for self-hosted sovereign clouds, or **Microsoft Entra ID** / **Okta** for extensive pre-built SaaS app catalogs and managed compliance.
+- 💻 **API-First & Headless CIAM**: Deploy **Ory (Kratos + Hydra)** or **Zitadel** when building multi-tenant SaaS products requiring custom UI rendering and modern REST/gRPC identity APIs.
+- 🔐 **Zero-Trust Reverse Proxy Auth**: Use **Authelia** or **Authentik** to enforce 2FA/MFA in front of internal infrastructure dashboards without modifying downstream application source code.
+- 🌍 **Data Sovereignty & Air-Gapped Deployments**: Open-source solutions (**Keycloak**, **Kanidm**, **Casdoor**) eliminate per-user SaaS license costs and keep user credentials strictly within private data centers.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! To suggest a new Identity Federation platform or update existing information:
+
+1. 🍴 Fork the repository.
+2. 📝 Add or edit entries in `README.md` following the tabular or badged structure.
+3. 🔗 Verify official documentation links, pricing models, and open-source star badges.
+4. 🚀 Submit a Pull Request with a brief note explaining your proposed additions.
+
+Please review our curated resources list at **[Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)** for related repository guidelines.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this identity federation directory helpful for your security team, platform architecture, or research, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it.
+- 🔀 **Fork & Share** with your team and security network.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Thank you to all community contributors and maintainers for keeping identity standards open, secure, and accessible!
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Identity-Federation-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Identity-Federation-Platform&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated list** provided for educational and informational purposes only.
+- Identity and access control platforms are **security-critical infrastructure**. Deploying open-source or SaaS identity providers requires rigorous threat modeling, secrets hardening, regular security patching, and compliance verification.
