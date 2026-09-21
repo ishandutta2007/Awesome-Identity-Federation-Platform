@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Identity-Federation-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Identity-Federation-Platform?style=flat-square&logo=github" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Identity-Federation-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Identity-Federation-Platform?style=flat-square&logo=github" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Identity-Federation-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Identity-Federation-Platform?style=flat-square&logo=github" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Identity-Federation-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Identity-Federation-Platform?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -51,42 +51,42 @@ Below is a comparison of leading enterprise SaaS Identity platforms, ranked by *
 
 ## 🔓 Open-Source Identity & Access Management Projects
 
-Below is a curated list of production-grade **Open-Source Identity Providers**, ranked by **GitHub Star Count (Descending)**. Star badges link directly to each project's stargazers page:
+Below is a curated list of production-grade **Open-Source Identity Providers**, ranked by **GitHub Stars_Count (Descending)**. Stars_Badges link directly to each project's stargazers page:
 
-1. 👑 **[Keycloak](https://github.com/keycloak/keycloak)** [![GitHub stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers)  
+1. 👑 **[Keycloak](https://github.com/keycloak/keycloak)** [![GitHub_Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers)  
    Leading CNCF open-source identity and access management solution. Features Single Sign-On (SSO), identity brokering, LDAP/AD user federation, SAML 2.0, OpenID Connect, and fine-grained authorization.
 
-2. 🛡️ **[Authelia](https://github.com/authelia/authelia)** [![GitHub stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers)  
+2. 🛡️ **[Authelia](https://github.com/authelia/authelia)** [![GitHub_Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers)  
    Lightweight authentication and authorization server providing two-factor authentication (2FA) and single sign-on for applications running behind reverse proxies (Nginx, Traefik, Caddy).
 
-3. 🔑 **[Authentik](https://github.com/goauthentik/authentik)** [![GitHub stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers)  
+3. 🔑 **[Authentik](https://github.com/goauthentik/authentik)** [![GitHub_Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers)  
    Modern open-source Identity Provider focused on flexibility and visual pipeline builders. Supports SAML 2.0, OIDC, LDAP, RADIUS, embedded reverse proxying, and custom Python authentication flows.
 
-4. ⚡ **[SuperTokens](https://github.com/supertokens/supertokens-core)** [![GitHub stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers)  
+4. ⚡ **[SuperTokens](https://github.com/supertokens/supertokens-core)** [![GitHub_Stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers)  
    Developer-first open-source Auth0 alternative for web and mobile apps. Provides modular components for passwordless login, social SSO, multi-tenancy, and secure session management.
 
-5. 🏢 **[Zitadel](https://github.com/zitadel/zitadel)** [![GitHub stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers)  
+5. 🏢 **[Zitadel](https://github.com/zitadel/zitadel)** [![GitHub_Stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers)  
    Cloud-native identity infrastructure written in Go. Built for multi-tenant B2B applications, fine-grained access control, audit immutability, and turn-key OIDC/SAML integration.
 
-6. 🎨 **[Logto](https://github.com/logto-io/logto)** [![GitHub stars](https://img.shields.io/github/stars/logto-io/logto?style=social&color=white)](https://github.com/logto-io/logto/stargazers)  
+6. 🎨 **[Logto](https://github.com/logto-io/logto)** [![GitHub_Stars](https://img.shields.io/github/stars/logto-io/logto?style=social&color=white)](https://github.com/logto-io/logto/stargazers)  
    Modern open-source identity engine with pre-built UI sign-in components, multi-tenant RBAC, and streamlined developer workflows for Customer Identity (CIAM).
 
-7. 🚀 **[Casdoor](https://github.com/casdoor/casdoor)** [![GitHub stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers)  
+7. 🚀 **[Casdoor](https://github.com/casdoor/casdoor)** [![GitHub_Stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers)  
    UI-first open-source Identity and Access Management (IAM) / Single Sign-On (SSO) platform supporting OAuth 2.0, OIDC, SAML, and CAS protocols with multi-language web UI support.
 
-8. ⚙️ **[Ory Kratos](https://github.com/ory/kratos)** [![GitHub stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers)  
+8. ⚙️ **[Ory Kratos](https://github.com/ory/kratos)** [![GitHub_Stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers)  
    API-first, headless cloud-native user management and identity provider engine. Integrates seamlessly with Ory Hydra for OAuth2/OIDC standards and zero-trust microservices architectures.
 
-9. 🎓 **[Apereo CAS](https://github.com/apereo/cas)** [![GitHub stars](https://img.shields.io/github/stars/apereo/cas?style=social&color=white)](https://github.com/apereo/cas/stargazers)  
+9. 🎓 **[Apereo CAS](https://github.com/apereo/cas)** [![GitHub_Stars](https://img.shields.io/github/stars/apereo/cas?style=social&color=white)](https://github.com/apereo/cas/stargazers)  
    Enterprise single sign-on framework heavily used in higher education and enterprise orgs, supporting Central Authentication Service (CAS) protocol, SAML 2.0, OpenID Connect, and OAuth 2.0.
 
-10. 🦀 **[Kanidm](https://github.com/kanidm/kanidm)** [![GitHub stars](https://img.shields.io/github/stars/kanidm/kanidm?style=social&color=white)](https://github.com/kanidm/kanidm/stargazers)  
+10. 🦀 **[Kanidm](https://github.com/kanidm/kanidm)** [![GitHub_Stars](https://img.shields.io/github/stars/kanidm/kanidm?style=social&color=white)](https://github.com/kanidm/kanidm/stargazers)  
     High-performance, memory-safe identity management server written in Rust. Designed for Linux enterprise directory replacement, SSH key management, and OAuth2/OIDC web SSO.
 
-11. 🌐 **[WSO2 Identity Server](https://github.com/wso2/product-is)** [![GitHub stars](https://img.shields.io/github/stars/wso2/product-is?style=social&color=white)](https://github.com/wso2/product-is/stargazers)  
+11. 🌐 **[WSO2 Identity Server](https://github.com/wso2/product-is)** [![GitHub_Stars](https://img.shields.io/github/stars/wso2/product-is?style=social&color=white)](https://github.com/wso2/product-is/stargazers)  
     Enterprise-grade open-source IAM platform offering adaptive authentication, identity federation across multi-cloud environments, API security, and privacy compliance.
 
-12. 📦 **[Janssen Project (Gluu evolution)](https://github.com/JanssenProject/jans)** [![GitHub stars](https://img.shields.io/github/stars/JanssenProject/jans?style=social&color=white)](https://github.com/JanssenProject/jans/stargazers)  
+12. 📦 **[Janssen Project (Gluu evolution)](https://github.com/JanssenProject/jans)** [![GitHub_Stars](https://img.shields.io/github/stars/JanssenProject/jans?style=social&color=white)](https://github.com/JanssenProject/jans/stargazers)  
     Linux Foundation open-source digital identity platform designed for high-concurrency identity governance, OAuth 2.0 authorization, and FIDO2 passwordless authentication.
 
 13. 🐧 **[FreeIPA](https://www.freeipa.org/)**  
@@ -112,7 +112,7 @@ Contributions are warmly welcomed! To suggest a new Identity Federation platform
 
 1. 🍴 Fork the repository.
 2. 📝 Add or edit entries in `README.md` following the tabular or badged structure.
-3. 🔗 Verify official documentation links, pricing models, and open-source star badges.
+3. 🔗 Verify official documentation links, pricing models, and open-source Stars_Badges.
 4. 🚀 Submit a Pull Request with a brief note explaining your proposed additions.
 
 Please review our curated resources list at **[Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)** for related repository guidelines.
